@@ -21,7 +21,7 @@ def prompt_user
   puts "Type 'h' to hit or 's' to stay"
 end
 
-def get_user_input (prompt)
+def get_user_input
   # code #get_user_input here
   gets.chomp 
 end
@@ -42,7 +42,7 @@ def hit? (card_total)
   # code hit? here
   
   prompt_user
-  input=get_user_input(prompt)
+  input=get_user_input
   if input == "h"
     card_total += deal_card
   elsif input == "s" 
