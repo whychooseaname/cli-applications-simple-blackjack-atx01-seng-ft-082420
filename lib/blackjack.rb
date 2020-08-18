@@ -70,6 +70,7 @@ def runner
   while card_total < 22
     hit? (card_total)
     display_card_total (card_total)
+  end
   if card_total > 21
     #display_card_total (card_total)
     end_game (card_total)
